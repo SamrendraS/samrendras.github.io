@@ -108,7 +108,7 @@ function draw() {
 var tags = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eight", "nineth"];
 
 function reset() {
-    for (int i = 0; tags.length; i++) {
+    for (int i = 0; i < tags.length; i++) {
         document.getElementById(tags[i]).innerHTML = '-';
     }
 }
