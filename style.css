@@ -1,103 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 body {
-  margin: 0;
-  min-width: 250px;
-  font-family: Roboto;
-  max-width: 900px;
-  margin: auto;
-  background-color: #801515;
+    font-family: 'Source Sans Pro';
+    background: lightblue;
 }
 
-* {
-  box-sizing: border-box;
+.game {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    border: 5px solid white;
+    width: 600px;
+    height: 600px;
+    text-align: center;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+.game :hover {
+    background-color: lightgrey;
+    cursor: pointer;
 }
 
-ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
-  list-style-type: none;
-  background: #eee;
-  font-size: 18px;
-  transition: 0.2s;
-}
-
-ul li:hover {
-  background: #ddd;
-}
-
-ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
-}
-
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
-
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px; 
-}
-
-.close:hover {
-  background-color: #D46A6A;
-  color: white;
-}
-
-.header {
-  background-color: #D46A6A;
-  padding: 30px 40px;
-  color: white;
-  text-align: center;
-  margin-top: 11rem;
-}
-
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-input {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  width: 75%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;
-}
-
-.button1 {
-  padding: 10px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
-  float: left;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
-}
-
-.button1:hover {
-  background-color: #bbb;
+.game-field {
+    border: 11px solid white;
+    max-width: 600/3;
+    color: white;
+    max-height: 600/3;
+    font-size: 100px;
+    align-self: center;
+    padding: 27px 0px;
+    justify-self: stretch;
 }
