@@ -108,4 +108,5 @@ function reset() {
     for (var i = 0; i < tags.length; i++) {
         document.getElementById(tags[i]).innerHTML = '-';
     }
+    game.res = false;
 }
