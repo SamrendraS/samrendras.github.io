@@ -75,7 +75,6 @@ function gameStatus() {
         document.getElementById('seventh').innerHTML === curPlayer:
             game.res = true;
             alert(game.currentPlayer + ' Wins!');
-            reset;
             break;
 
         default:
@@ -97,18 +96,13 @@ function draw() {
         isEmpty('sixth') &&
         isEmpty('seventh') &&
         isEmpty('eight') &&
-        isEmpty('nineth')) {
-
+        isEmpty('nineth'))
         alert("It's a Draw!");
-        reset();
-    }
-
 }
+// var tags = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eight", "nineth"];
 
-var tags = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eight", "nineth"];
-
-function reset() {
-    for (int i = 0; i < tags.length; i++) {
-        document.getElementById(tags[i]).innerHTML = '-';
-    }
-}
+// function reset() {
+//     for (int i = 0; i < tags.length; i++) {
+//         document.getElementById(tags[i]).innerHTML = '-';
+//     }
+// }
