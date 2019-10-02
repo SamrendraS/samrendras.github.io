@@ -6,12 +6,11 @@ body {
 
 .game {
     display: grid;
-    grid-template-columns: repeat(3, 200);
-    grid-template-rows: repeat(3, 200);
+    grid-template-columns: repeat(3, 33.33%);
     border: 5px solid white;
-    grid-gap: 0px;
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
     text-align: center;
 }
 
@@ -22,8 +21,8 @@ body {
 
 .game-field {
     border: 11px solid white;
-    max-width: 600/3;
-    max-height: 600/3;
+    max-width: 200px;
+    max-height: 200px;
     color: white;
     font-size: 100px;
     align-self: center;
@@ -34,5 +33,6 @@ body {
 h1 {
     font-size: 75px;
     color: white;
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
 }

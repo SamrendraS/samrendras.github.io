@@ -3,6 +3,9 @@ var game = {
     user2: 'O',
     currentPlayer: 'user1',
     res: false,
+    tags: ["first", "second", "third", "fourth", "fifth", "sixth",
+        "seventh", "eight", "nineth"
+    ],
 };
 
 function icon(id) {
@@ -102,11 +105,10 @@ function draw() {
         reset();
     }
 }
-var tags = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eight", "nineth"];
 
 function reset() {
-    for (var i = 0; i < tags.length; i++) {
-        document.getElementById(tags[i]).innerHTML = '-';
+    for (var i = 0; i < game.tags.length; i++) {
+        document.getElementById(game.tags[i]).innerHTML = '-';
     }
     game.res = false;
 }
